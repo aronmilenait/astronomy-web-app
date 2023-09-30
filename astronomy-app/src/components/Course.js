@@ -11,8 +11,8 @@ const Course = () => {
         </video>
       </div>
     <div className="container text-white mt-5">
-      <h2 className="display-4 text-center">About the course</h2>
-      <p className="lead text-center">
+      <h2 className="display-4 text-center fw-bold">About the course</h2>
+      <p className="lead text-center fw-bold">
         Welcome to Astronomy 101: Discovering the Universe!
       </p>
       <p>
@@ -26,7 +26,7 @@ const Course = () => {
         of astronomy. Over the duration of this journey, you will embark on an
         astronomical adventure that will unravel the secrets of the universe.
       </p>
-      <p className="text-center display-6">What you'll learn:</p>
+      <p className="text-center display-6 fw-bold">What you'll learn:</p>
       <ul className="ul_custom">
         <li className="li_custom">Explore the basics of stargazing and celestial objects.</li>
         <li className="li_custom">Discover the fascinating history of astronomy and its pioneers.</li>

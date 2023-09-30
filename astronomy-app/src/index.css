@@ -1,11 +1,10 @@
 /* NAVBAR SECTION */
 
 nav {
-  background-color: #0e112b;
+  background: #000;
   color: white;
   padding: 10px;
 }
-
 
 #navbar_div {
   display: flex;
@@ -21,44 +20,53 @@ nav {
 }
 
 .nav-link {
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 0 15px; 
   color: #fff;
+  transition: ease-in-out 0.3s; 
 }
 
-.navbar_a {
+.nav_li_custom {
   text-decoration: none;
   color: #fff;
   font-family: Montserrat, 'sans-serif';
   font-weight: bold;
   font-size: 1rem;
-  transition: ease-in-out 0.2s;
+  transition: border-bottom ease-in-out 0.3s;
   cursor: pointer;
 }
 
-.navbar_a:hover {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.navbar-nav li a {
-  position: relative;
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.navbar-nav li a:hover {
+.nav-link:hover {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  animation: shadow-blink 0.5s infinite alternate;
+}
+
+@keyframes shadow-blink {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 1);
+  }
 }
 
 
+.logo_size {
+  max-height: 50px;
+  width: auto;
+  transition: ease-in-out 0.3s; 
+}
+
+.logo_size:hover {
+  transform: scale(1.1); 
+  filter: brightness(1.2); 
+}
 
 /* HOME SECTION */
 
 #home_section {
-  padding-top: 4rem;
+  padding: 5rem;
+  background-image: url(./img/section2.jpg);
+  background-size: cover;
 }
 
 #home_content {
@@ -72,11 +80,6 @@ nav {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
   }
   
   margin-right: 20px; 
@@ -95,11 +98,13 @@ nav {
   margin-bottom: 20px;
   font-weight: bolder;
   font-size: 3rem;
+  text-shadow: 2px 2px 4px #000;
 }
 
 #home_p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-style: italic;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .grid-container {
@@ -111,11 +116,6 @@ gap: 20px;
 
 .grid-item {
 text-align: center; 
-}
-
-#home_img_div img {
-max-width: 100%; 
-margin-right: 150px;
 }
 
 section {
@@ -147,12 +147,31 @@ font-family: Montserrat, 'sans-serif';
 }
 
 #home_img {
-  width: 500px;
-  border-radius: 35px;
-  backdrop-filter: blur(10px);
+  max-width: 500px;
+  margin-right: 20px; 
+  opacity: 0.3;
+  border-radius: 30px;
+  animation: dance 5s infinite;
+
+}
+
+@keyframes dance {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*COURSE SECTION*/
+
+#course_section {
+  padding: 5rem;
+}
 
 .ul_custom {
   padding: 0;
@@ -169,28 +188,34 @@ font-family: Montserrat, 'sans-serif';
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-
-  &:hover {
+  .li_custom:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   }
-}
+
 
 /*CONTACT SECTION*/
 
+#contact_section {
+  padding: 5rem;
+  background-image: url(./img/section2.jpg);
+  background-size: cover;
+}
+
 .card_custom {
   background-color: #9b4480;
+  opacity: 75%;
   display: flex;
   align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px #000;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 .card_custom:hover {
   background-color: #683762;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 .card_title > a {
@@ -203,9 +228,6 @@ font-family: Montserrat, 'sans-serif';
   transition: 0.3s ease;
 }
 
-.card_title > a:hover {
-  text-shadow: #fff 0 0 2px;
-}
 
 .icon {
   color: #fff;
@@ -217,7 +239,6 @@ font-family: Montserrat, 'sans-serif';
   background-color: #0e112b;
   text-align: center;
   color: #fff; 
-  padding: 20px 0; 
 }
 
 .footer_custom a {
@@ -257,5 +278,29 @@ font-family: Montserrat, 'sans-serif';
   #home_img_div img {
     max-width: 60%; 
     margin: 0 auto;
+  }
+
+
+  #home_h1 {
+    font-size: 2.3rem;
+  }
+
+  #home_p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center; 
+  }
+
+  .nav-item {
+    display: block; 
+    margin-bottom: 10px; 
+  }
+  
+  .navbar-toggler {
+    margin-top: 10px; 
   }
 }
