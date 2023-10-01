@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/astronomy-web-app/static/css/main.473c204c.css",
+    "main.css": "/astronomy-web-app/static/css/main.0cb5e2f8.css",
     "main.js": "/astronomy-web-app/static/js/main.0ae1ee0e.js",
     "static/js/787.31d2a00a.chunk.js": "/astronomy-web-app/static/js/787.31d2a00a.chunk.js",
     "static/media/coursevideo.mp4": "/astronomy-web-app/static/media/coursevideo.a12d7e08a676af7740a4.mp4",
@@ -8,12 +8,12 @@
     "static/media/section2.jpg": "/astronomy-web-app/static/media/section2.397f250cabe814f92d61.jpg",
     "static/media/logo.png": "/astronomy-web-app/static/media/logo.3d154ac6e4d8b6fb0021.png",
     "index.html": "/astronomy-web-app/index.html",
-    "main.473c204c.css.map": "/astronomy-web-app/static/css/main.473c204c.css.map",
+    "main.0cb5e2f8.css.map": "/astronomy-web-app/static/css/main.0cb5e2f8.css.map",
     "main.0ae1ee0e.js.map": "/astronomy-web-app/static/js/main.0ae1ee0e.js.map",
     "787.31d2a00a.chunk.js.map": "/astronomy-web-app/static/js/787.31d2a00a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.473c204c.css",
+    "static/css/main.0cb5e2f8.css",
     "static/js/main.0ae1ee0e.js"
   ]
 }
